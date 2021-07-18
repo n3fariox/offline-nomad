@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  dev:
+    image: python-vscode:3.7-${VSCODE_COMMIT}-${USER_ID}
+    volumes:
+      - ..:/workspace:cached
+      # NOTE: Mapping extensions in seems to work the best for me
+      - ~/.vscode/extensions:/extensions/:cached
+    command: sleep infinity

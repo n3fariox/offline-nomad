@@ -1,0 +1,12 @@
+{
+    "name": "Python-Dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "vscode",
+    "extensions": [],  // None, we map ours in
+    "postCreateCommand": "",
+    "settings": {
+        "window.title": "${dirty}${remoteName}${separator}${activeEditorMedium}"
+    }
+}
